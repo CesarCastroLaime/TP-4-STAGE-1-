@@ -1,0 +1,166 @@
+/* Ejercicio 1: 5 formas de seleccionar #especial */
+#especial {
+    background-color: lightblue;
+}
+div#especial {
+    background-color: lightgreen;
+}
+.contenedor #especial {
+    background-color: lightyellow;
+}
+[id="especial"] {
+    background-color: lightpink;
+}
+*:is(#especial) {
+    background-color: lightgray;
+}
+
+/* Ejercicio 2: Elementos pares de .lista-items */
+.lista-items li:nth-child(even) {
+    background-color: #e2a16b;
+    margin-right: 90%;
+}
+
+/* Ejercicio 3: Pseudo-clases y pseudo-elementos */
+p::first-letter {
+    font-size: 2em;
+    color: teal;
+}
+button:hover {
+    background-color: rgb(168, 228, 173);
+}
+input:focus {
+    border: 2px solid green;
+}
+::selection {
+    background: yellow;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+
+/* Ejercicio 4: Pseudo-selectores adicionales */
+section button:hover {
+    background-color: rgb(241, 239, 66);
+}
+section input:focus {
+    border: 2px dashed blue;
+}
+
+/* Ejercicio 5: Clase .destacado */
+.destacado {
+    color: rgb(64, 18, 231);
+    font-weight: bold;
+}
+
+/* Ejercicio 6: Primer párrafo de cada sección */
+section p:first-of-type {
+    font-weight: bold;
+}
+
+/* Ejercicio 7: div hijos directos de otro div */
+div > div {
+    border: 1px solid black;
+    margin-right: 90%;
+}
+
+/* Ejercicio 8: Último elemento de lista ordenada */
+.lista-ordenada li:last-child {
+    font-size: 1.5em;
+}
+
+/* Ejercicio 9: Enlaces sin target="_blank" */
+a:not([target="_blank"]) {
+    text-decoration: underline;
+}
+
+/* Ejercicio 10: Párrafos dentro de article */
+article p {
+    line-height: 1.8;
+}
+
+/* Ejercicio 11: h2 con un span */
+h2:has(span) {
+    color: purple;
+}
+
+/* Ejercicio 12: Imágenes con alt definido */
+img[alt] {
+    border: 2px dashed green;
+}
+
+/* Ejercicio 13: Tercer item de lista desordenada */
+.lista-desordenada li:nth-child(3) {
+    font-style: italic;
+}
+
+/* Ejercicio 14: Filas impares en tabla */
+table tr:nth-child(odd) {
+    background-color: #b4d46b;
+}
+
+/* Ejercicio 15: div con 2 o más clases */
+div[class~="clase2"] {
+    box-shadow: 2px 2px 6px gray;
+    margin-right: 80%;
+}
+
+/* Ejercicio 16: Hover en button */
+button:hover {
+    background-color: #ffcc80;
+}
+
+/* Ejercicio 17: Input tipo text en form */
+form input[type="text"] {
+    border: 2px solid rgb(73, 212, 119);
+}
+
+/* Ejercicio 18: p inmediatamente después de h3 */
+h3 + p {
+    color: orange;
+}
+
+/* Ejercicio 19: Enlaces visitados */
+a:visited {
+    opacity: 0.6;
+}
+
+/* Ejercicio 20: strong dentro de p */
+p strong {
+    color: rgb(6, 39, 226);
+}
+
+/* Ejercicio 21: Input deshabilitado */
+input:disabled {
+    background-color: #ccc;
+}
+
+/* Ejercicio 22: li dentro de nav */
+nav li {
+    margin-bottom: 10px;
+}
+
+/* Ejercicio 23: Elementos con “importante” en la clase */
+[class*="importante"] {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
